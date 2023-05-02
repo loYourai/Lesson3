@@ -143,8 +143,10 @@ while (number < 10)
 }
 Console.WriteLine("Sum " + sum);
 
+
 */
 /*
+
 
 string name = Console.ReadLine();
 int number = 0;
@@ -185,14 +187,94 @@ else
 Console.WriteLine(number);
 */
 
-
+/*
 Console.WriteLine("Enter first number:");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter second number:");
 int number2 = int.Parse(Console.ReadLine());
 int result = 0;
-if (number1 > 0  && number2 > 0)
+if (number1 > 0  && number2 > 0 )
 {
     result = number1 * number2;
 }
 Console.WriteLine("Multiplication result: " + result);
+*/
+
+
+
+
+
+
+
+Console.WriteLine("Введите 1 число:");
+int number1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите 2 число:");
+int number2 = int.Parse(Console.ReadLine());
+//int sum = 0;
+
+//while (true) 
+
+    if (number1 > number2)
+{
+    do
+    {
+        number1++;
+        if (number1 == number2)
+        {
+            break;
+        }
+
+    }
+    while (true);
+
+}
+    else if (number1 < number2)
+{
+    do
+    {
+        number1++;
+        if (number1 == number2)
+        {
+            break;
+        }
+        
+    }
+    while (true);
+}
+    int sum = number1 + number2;
+Console.WriteLine(sum);
+
+
+
+
+
+
+
+/*
+
+{
+int result = number1 + number2;
+Console.WriteLine(result);
+
+};
+
+
+//while (number1 == number2);
+
+//int result = number1 + number2;
+//Console.WriteLine(result);
+*/
+/*
+int number = 0;
+while (true)
+{
+    number++;
+    Console.WriteLine("Number: " + number);
+    if (number == 7)
+    {
+        break;
+    }
+}
+*/
+
+
