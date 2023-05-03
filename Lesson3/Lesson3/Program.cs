@@ -207,6 +207,9 @@ Console.WriteLine("Multiplication result: " + result);
 
 
 
+
+//HOMEWORK
+
 Console.WriteLine("Введите 1 число:");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите 2 число:");
@@ -240,7 +243,7 @@ if (number1 > number2)
     int nmbr1 = number1;
     do
     {
-        //number1 += number2;
+        
         number1++;
         result += number1 + sum ;
         
@@ -250,7 +253,7 @@ if (number1 > number2)
             break;
             
         }
-        //result += number1 + number2;
+        
         int otvet = nmbr1 + result + number2;
         Console.WriteLine("Ответ:" + otvet);
     }
@@ -265,34 +268,5 @@ if (number1 > number2)
 
 
 
-
-/*
-
-{
-int result = number1 + number2;
-Console.WriteLine(result);
-
-};
-
-
-//while (number1 == number2);
-
-//int result = number1 + number2;
-//Console.WriteLine(result);
-*/
-/*
-int number = 0;
-while (true)
-{
-    number++;
-    Console.WriteLine("Number: " + number);
-    if (number == 7)
-    {
-        break;
-    }
-}
-for(int i= a+1; i <= b; i++){
-    sum += i;
-*/
 
 
