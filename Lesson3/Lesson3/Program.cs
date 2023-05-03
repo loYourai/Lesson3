@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 
 Console.WriteLine("Hello, World!");
 
@@ -143,8 +144,10 @@ while (number < 10)
 }
 Console.WriteLine("Sum " + sum);
 
+
 */
 /*
+
 
 string name = Console.ReadLine();
 int number = 0;
@@ -185,14 +188,85 @@ else
 Console.WriteLine(number);
 */
 
-
+/*
 Console.WriteLine("Enter first number:");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter second number:");
 int number2 = int.Parse(Console.ReadLine());
 int result = 0;
-if (number1 > 0  && number2 > 0)
+if (number1 > 0  && number2 > 0 )
 {
     result = number1 * number2;
 }
 Console.WriteLine("Multiplication result: " + result);
+*/
+
+
+
+
+
+
+
+
+//HOMEWORK
+
+Console.WriteLine("Введите 1 число:");
+int number1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите 2 число:");
+int number2 = int.Parse(Console.ReadLine());
+int sum = 0;
+int result = 0;
+int result2 = 0;
+
+if (number1 > number2)
+{
+    int nmbr2 = number2;
+    do
+    {
+        number2++;
+        result2 += number2 + sum;
+        
+        
+        if (number2 == number1)
+        {
+            break;
+        }
+        int otvet = nmbr2 + result2 + number1;
+        Console.WriteLine("Ответ:" + otvet);
+        
+    }
+    while (true);
+
+}
+    else if (number1 < number2)
+{
+    int nmbr1 = number1;
+    do
+    {
+        
+        number1++;
+        result += number1 + sum ;
+        
+        if (number1 == number2)
+        {
+            
+            break;
+            
+        }
+        
+        int otvet = nmbr1 + result + number2;
+        Console.WriteLine("Ответ:" + otvet);
+    }
+    while (true);
+
+}
+    
+
+
+
+
+
+
+
+
+
