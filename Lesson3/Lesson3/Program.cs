@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 
 Console.WriteLine("Hello, World!");
 
@@ -210,39 +211,54 @@ Console.WriteLine("Введите 1 число:");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите 2 число:");
 int number2 = int.Parse(Console.ReadLine());
-//int sum = 0;
+int sum = 0;
+int result = 0;
+int result2 = 0;
 
-//while (true) 
-
-    if (number1 > number2)
+if (number1 > number2)
 {
+    int nmbr2 = number2;
     do
     {
-        number1++;
-        if (number1 == number2)
+        number2++;
+        result2 += number2 + sum;
+        
+        
+        if (number2 == number1)
         {
             break;
         }
-
+        int otvet = nmbr2 + result2 + number1;
+        Console.WriteLine("Ответ:" + otvet);
+        
     }
     while (true);
 
 }
     else if (number1 < number2)
 {
+    int nmbr1 = number1;
     do
     {
+        //number1 += number2;
         number1++;
+        result += number1 + sum ;
+        
         if (number1 == number2)
         {
+            
             break;
+            
         }
-        
+        //result += number1 + number2;
+        int otvet = nmbr1 + result + number2;
+        Console.WriteLine("Ответ:" + otvet);
     }
     while (true);
+
 }
-    int sum = number1 + number2;
-Console.WriteLine(sum);
+    
+
 
 
 
@@ -275,6 +291,8 @@ while (true)
         break;
     }
 }
+for(int i= a+1; i <= b; i++){
+    sum += i;
 */
 
 
